@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Political Bias Analyzer - Chrome Extension (LLAMA Edition)
-=======
-# Political Bias Analyzer - Chrome Extension (OPEN AI API)
->>>>>>> 93682ac7927e83e68ca750557316bae51a7355ff
 
 A Chrome extension that analyzes political bias in news articles and web content using a local LLAMA API. The extension extracts article content and provides a visual breakdown of left vs. right political leaning percentages.
 
