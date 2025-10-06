@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Political Bias Analyzer - LLAMA",
+  "description": "A Chrome extension that analyzes political bias in news articles and web content using a local LLAMA API. The extension extracts article content and provides a visual breakdown of left vs. right political leaning percentages.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "PoliticalBiasAnalyzer.html",
+    "default_title": "Political Bias Analyzer by LLAMA"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:11434/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
